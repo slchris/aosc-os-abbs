@@ -5,3 +5,4 @@ CHKSUMS="SKIP \
          sha256::ae74a81ea79c0dc7250e586627c278c0a9a8c5de46c9fb5c38c167fb1a36f056"
 SUBDIR="scrcpy"
 CHKUPDATE="anitya::id=226924"
+REL=1
