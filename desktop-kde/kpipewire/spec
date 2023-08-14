@@ -2,3 +2,4 @@ VER=5.27.2
 SRCS="tbl::https://download.kde.org/stable/plasma/$VER/kpipewire-$VER.tar.xz"
 CHKSUMS="sha256::0976f0fd8ee501f5632b60142f8b554034ebd55a9a41359c467b44aa12e125f0"
 CHKUPDATE="anitya::id=8761"
+REL=1
