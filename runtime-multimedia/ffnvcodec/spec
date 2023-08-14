@@ -1,4 +1,4 @@
-VER=11.1.5.1
+VER=12.0.16.0
 SRCS="tbl::https://github.com/FFmpeg/nv-codec-headers/releases/download/n$VER/nv-codec-headers-$VER.tar.gz"
-CHKSUMS="sha256::a28cdde3ac0e9e02c2dde7a1b4de5333b4ac6148a8332ca712da243a3361a0d9"
+CHKSUMS="sha256::ab0ed1db1c2a03410c7006b941d145a73683eaec121cdf5d3009749fb8dc8a03"
 CHKUPDATE="anitya::id=223796"
