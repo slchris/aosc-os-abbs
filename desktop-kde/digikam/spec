@@ -17,3 +17,4 @@ CHKSUMS="sha256::c3b80abc090da3cbbc42e67a403080d7f5fe0a7c98698735bda556c60314bab
          sha256::510ffd2471bd81e3fcc88a5beb4eae4fb445ccf8333ebc54e7302b83f4158a76"
 CHKUPDATE="anitya::id=437"
 SUBDIR="digikam-$VER"
+REL=1
