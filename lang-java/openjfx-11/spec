@@ -2,3 +2,4 @@ VER=11.0.17+0
 SRCS="tbl::https://github.com/openjdk/jfx11u/archive/refs/tags/${VER}.tar.gz"
 CHKSUMS="sha256::c32918ffd1bc640d8885182df218dc0ce40580d7c783bf943d835a9b9a24142b"
 CHKUPDATE="anitya::id=177935"
+REL=1
