@@ -1,4 +1,0 @@
-if [[ "${CROSS:-$ARCH}" = "ppc64el" ]]; then
-    abinfo "Disbling x86 intrinsics to avoid SIGILL when playing .wmv files ..."
-    export CPPFLAGS="${CPPFLAGS/-DNO_WARN_X86_INTRINSICS/}"
-fi
