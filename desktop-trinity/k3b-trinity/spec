@@ -5,3 +5,4 @@ CHKSUMS="sha256::5c69b2561ef3d5da984c1ad44d1f98ab3182016509ab1424f0f957e41fbbed7
          sha256::0f25b8cea5c13b8e2483932f20fa68b759c6e6104c5bd31beab0ed806c18aa90"
 CHKUPDATE="anitya::id=16065"
 SUBDIR="k3b-trinity-$VER"
+REL=1
