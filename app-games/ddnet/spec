@@ -2,4 +2,4 @@ VER=17.0.3
 SRCS="git::commit=tags/$VER::https://github.com/ddnet/ddnet"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=138153"
-REL=1
+REL=2
