@@ -1,0 +1,19 @@
+abinfo "Configuring ukui-interface..."
+NOCONFIGURE=1 ./autogen.sh
+./configure --prefix=/usr --libexecdir=/usr/lib/$PKGNAME --sysconfdir=/etc
+
+abinfo "Building ukui-interface..."
+make
+
+abinfo "Building log4qt..."
+cd src/log4qt
+qmake-qt5 PREFIX=/usr
+make
+
+abinfo "Installing ukui-interface..."
+cd $SRCDIR
+make DESTDIR="$PKGDIR" install
+
+abinfo "Installing log4qt"
+cd src/log4qt
+make INSTALL_ROOT="$PKGDIR" install

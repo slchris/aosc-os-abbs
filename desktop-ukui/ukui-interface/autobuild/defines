@@ -1,0 +1,4 @@
+PKGNAME=ukui-interface
+PKGDES="UKUI interface for system configuration and related libraries"
+PKGSEC=x11
+PKGDEP="dconf gsettings-qt iniparser"

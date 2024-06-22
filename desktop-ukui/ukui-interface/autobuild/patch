@@ -1,0 +1,1 @@
+find ./src -type f -exec sed -i -e 's/<iniparser\/iniparser.h>/<iniparser.h>/g' {} \; 
