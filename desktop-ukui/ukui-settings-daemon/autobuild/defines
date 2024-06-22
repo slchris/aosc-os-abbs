@@ -1,0 +1,5 @@
+PKGNAME=ukui-settings-daemon
+PKGDES="Daemon handling the UKUI session settings"
+PKGSEC=x11
+PKGDEP="geoclue2 gnome-desktop gsettings-desktop-schemas gtk-3 kconfig kglobalaccel kwindowsystem imlib2 libcanberra libkscreen libmatekbd libmatemixer libnotify libxklavier mate-desktop qt-5 ukui-interface"
+BUILDDEP="qt-5 xorg-server"
