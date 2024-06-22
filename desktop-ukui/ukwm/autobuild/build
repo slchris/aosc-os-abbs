@@ -1,0 +1,13 @@
+abinfo "Configuring ukwm..."
+NOCONFIGURE=1 ./autogen.sh
+# Patch from Arch Linux
+sed -i 's/GETTEXT_MACRO_VERSION = 0.19/GETTEXT_MACRO_VERSION = 0.20/' po/Makefile.in.in
+./configure --prefix=/usr --libexecdir=/usr/lib/$PKGNAME --sysconfdir=/etc --enable-introspection --enable-compile-warnings=yes --disable-wayland
+
+abinfo "Building ukwm..."
+make
+
+abinfo "Installing ukwm..."
+make DESTDIR="$PKGDIR" install
+
+

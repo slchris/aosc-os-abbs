@@ -1,0 +1,5 @@
+PKGNAME=ukwm
+PKGDES="A lightweight GTK+ window manager by ukui"
+PKGSEC=x11
+PKGDEP="gnome-desktop gobject-introspection libinput libxkbcommon ukui-settings-daemon upower libcanberra"
+BUILDDEP="gobject-introspection mate-common intltool"
