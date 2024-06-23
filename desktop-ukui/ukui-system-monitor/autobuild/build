@@ -1,0 +1,6 @@
+abinfo "Building ukui-system-monitor..."
+qmake-qt5 PREFIX=/usr/
+make
+
+abinfo "Installing ukui-system-monitor..."
+make INSTALL_ROOT="$PKGDIR" install

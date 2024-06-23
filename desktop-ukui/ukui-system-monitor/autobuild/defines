@@ -1,0 +1,6 @@
+PKGNAME=ukui-system-monitor
+PKGDES="Monitor for UKUI desktop environment"
+PKGSEC=x11
+PKGDEP="dconf gsettings-qt hicolor-icon-theme kwindowsystem libqtxdg libgtop qt-5"
+
+ABSPLITDBG=0
