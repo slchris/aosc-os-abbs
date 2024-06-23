@@ -1,0 +1,2 @@
+sed -i '1i #include <QPainterPath>' ukui-flash-disk/ejectInterface.cpp
+sed -e '/QtWebKit/d' -i plugin-calendar/ukuicalendar.*
