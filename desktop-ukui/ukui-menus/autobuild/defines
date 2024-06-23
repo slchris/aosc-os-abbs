@@ -1,0 +1,5 @@
+PKGNAME=ukui-menus
+PKGDES="Implementation of the freedesktop menu specification for UKUI"
+PKGSEC=x11
+PKGDEP="glib"
+BUILDDEP="autoconf-archive gobject-introspection intltool mate-common"

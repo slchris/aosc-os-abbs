@@ -1,0 +1,9 @@
+abinfo "Configuring ukui-menus..."
+NOCONFIGURE=1 ./autogen.sh
+PYTHON="/usr/bin/python3" ./configure --prefix=/usr --libexecdir=/usr/lib/$pkgname --sysconfdir=/etc --enable-introspection
+
+abinfo "Building ukui-menus..."
+make
+
+abinfo "Installing ukui-menus..."
+make DESTDIR="$PKGDIR" install
