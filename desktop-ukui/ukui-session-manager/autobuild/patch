@@ -1,0 +1,1 @@
+sed -i '/#include <QString>/i #include <QFile>' tools/main.cpp

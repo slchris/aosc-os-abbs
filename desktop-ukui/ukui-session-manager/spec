@@ -1,0 +1,4 @@
+VER=3.0.5
+SRCS="git::commit=tags/v${VER}::https://github.com/ukui/ukui-session-manager.git"
+CHKSUMS="SKIP"
+CHKUPDATE="anitya::id=372988"

@@ -1,0 +1,8 @@
+abinfo "Building ukui-session-manager..."
+mkdir -p build
+cd build
+cmake .. -GNinja -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib
+ninja
+
+abinfo "Installing ukui-session-manager..."
+DESTDIR="$PKGDIR" ninja install
