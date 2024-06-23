@@ -2,3 +2,5 @@ PKGNAME=lxqt-build-tools
 PKGSEC=LxQt
 BUILDDEP="qt-5"
 PKGDES="Various packaging tools and scripts for LXQt applications"
+
+ABSPLITDBG=0
