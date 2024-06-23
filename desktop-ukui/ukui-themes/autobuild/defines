@@ -1,0 +1,6 @@
+PKGNAME=ukui-themes
+PKGDES="Official themes for the UKUI desktop"
+PKGSEC=x11
+PKGDEP="dconf"
+
+ABSPLITDBG=0

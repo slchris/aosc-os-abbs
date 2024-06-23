@@ -1,0 +1,6 @@
+abinfo "Building ukui-themes..."
+meson build
+ninja -C build
+
+abinfo "Installing ukui-themes..."
+DESTDIR="$PKGDIR" ninja -C build install
