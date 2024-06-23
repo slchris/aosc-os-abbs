@@ -1,0 +1,11 @@
+PKGNAME=ukui-base
+PKGSEC=Bases
+PKGDEP="indicator-china-weather kylin-nm peony qt5-ukui-platformtheme ukui-biometric-auth \
+	ukui-control-center ukui-greeter ukui-interface ukui-media ukui-menu ukui-menus \
+	ukui-notebook ukui-panel ukui-power-manager ukui-screensaver ukui-session-manager \
+	ukui-settings-daemon ukui-sidebar ukui-system-monitor ukui-themes ukui-wallpapers \
+	ukui-window-switch ukwm xf86-input-libinput"
+PKGDES="Meta package for ukui desktop environment"
+
+VER_NONE=1
+ABHOST=noarch
