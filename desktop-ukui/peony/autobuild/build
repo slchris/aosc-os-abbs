@@ -1,0 +1,9 @@
+abinfo "Building peony..."
+qmake-qt5
+make
+
+abinfo "Installing peony..."
+make INSTALL_ROOT="$PKGDIR" install
+install -Dm644 data/peony{,-computer,-home,-trash}.desktop -t "$pkgdir"/usr/share/applications/
+install -Dm644 data/peony-desktop.desktop -t "$pkgdir"/etc/xdg/autostart/
+

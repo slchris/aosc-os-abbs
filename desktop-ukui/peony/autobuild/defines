@@ -1,0 +1,7 @@
+PKGNAME=peony
+PKGDES="File manager for the UKUI desktop"
+PKGSEC=x11
+PKGDEP="gsettings-qt kwayland kwindowsystem libcanberra libnotify poppler qt5-ukui-platformtheme udisks-2"
+BUILDDEP="qt-5"
+
+ABSPLITDBG=0
