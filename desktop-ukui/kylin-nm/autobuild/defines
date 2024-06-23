@@ -1,0 +1,6 @@
+PKGNAME=kylin-nm
+PKGDES="Kylin network monitor used in ubuntu-kylin operation system"
+PKGSEC=x11
+PKGDEP="gsettings-qt kwindowsystem qt-5"
+
+ABSPLITDBG=0
