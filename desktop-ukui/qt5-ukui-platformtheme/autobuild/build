@@ -1,0 +1,6 @@
+abinfo "Building qt5-ukui-platformtheme..."
+qmake-qt5 PREFIX=/usr
+make
+
+abinfo "Installing qt5-ukui-platformtheme..."
+make INSTALL_ROOT="$PKGDIR" install

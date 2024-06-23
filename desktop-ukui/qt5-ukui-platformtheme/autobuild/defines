@@ -1,0 +1,6 @@
+PKGNAME=qt5-ukui-platformtheme
+PKGDES="The UKUI platform theme for qt5 QPA"
+PKGSEC=x11
+PKGDEP="dconf gsettings-qt kwayland kwindowsystem libqtxdg"
+
+ABSPLITDBG=0
