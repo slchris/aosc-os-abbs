@@ -1,0 +1,6 @@
+abinfo "Building ukui-sidebar..."
+qmake-qt5 PREFIX=/usr/
+make
+
+abinfo "Installing ukui-sidebar..."
+make INSTALL_ROOT="$PKGDIR" install

@@ -1,0 +1,6 @@
+PKGNAME=ukui-sidebar
+PKGDES="Parallels toolbox for UKUI"
+PKGSEC=x11
+PKGDEP="libqtxdg ukui-interface"
+
+ABSPLITDBG=0

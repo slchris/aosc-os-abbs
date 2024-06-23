@@ -1,0 +1,1 @@
+sed -i 's/ xtst//' src/ukui-sidebar-core.pro
