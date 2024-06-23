@@ -1,0 +1,6 @@
+PKGNAME=ukui-greeter
+PKGDES="Lightdm greeter for UKUI"
+PKGSEC=x11
+PKGDEP="imlib2 lightdm x11-lib opencv qt-5"
+BUILDDEP="qt-5 openmpi pugixml jsoncpp fmt vtk glew hdf5"
+ABSPLITDBG=0

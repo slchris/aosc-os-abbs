@@ -1,0 +1,6 @@
+abinfo "Building ukui-greeter..."
+qmake-qt5 PREFIX=/usr QMAKE_LFLAGS="${LDFLAGS}"
+make
+
+abinfo "Installing ukui-greeter..."
+make INSTALL_ROOT="$PKGDIR" install
