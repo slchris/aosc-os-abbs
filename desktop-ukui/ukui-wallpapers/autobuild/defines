@@ -1,0 +1,5 @@
+PKGNAME=ukui-wallpapers
+PKGDES="UKUI wallpapers"
+PKGSEC=x11
+
+ABSPLITDBG=0
