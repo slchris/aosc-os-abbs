@@ -1,0 +1,10 @@
+abinfo "Building ukui-control-center..."
+qmake-qt5 PREFIX=/usr/
+make
+
+abinfo "Installing ukui-control-center..."
+make INSTALL_ROOT="$PKGDIR" install
+
+install -Dm644 registeredQDbus/conf/com.control.center.qt.systemdbus.service -t "$PKGDIR"/usr/share/dbus-1/system-services/
+install -Dm644 registeredQDbus/conf/com.control.center.qt.systemdbus.conf -t "$PKGDIR"/usr/share/dbus-1/system.d/
+

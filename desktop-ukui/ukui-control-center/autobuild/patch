@@ -1,0 +1,13 @@
+# Fix format-security
+# https://github.com/ukui/ukui-control-center/pull/6
+patch -Np1 -i autobuild/patches/000-fix-format-security.patch
+
+sed -i 's|systemd_service.path = /lib/systemd/system|systemd_service.path = /usr/lib/systemd/system|' group-manager-server/group-manager-server.pro
+sed -i 's|gio-unix-2.0|glib-2.0|' plugins/account/userinfo/giodbus.cpp
+
+# Fix build with libkscreen 5.27
+sed -e 's|c++11||' -i plugins/system/display/display.pro -i plugins/system/touchscreen/touchscreen.pro
+patch -p1 -i autobuild/patches/001-libkscreen-5.27.patch
+
+# Fix build with ddcutil 2
+patch -p1 -i autobuild/patches/002-ddcutil-2.patch
