@@ -1,0 +1,5 @@
+PKGNAME=ukui-power-manager
+PKGDES="Power management tool for the UKUI desktop"
+PKGSEC=x11
+PKGDEP="dbus-glib gtk-3 libgnome-keyring libnotify upower"
+BUILDDEP="intltool mate-common yelp-tools"

@@ -1,0 +1,9 @@
+abinfo "Configuring ukui-power-manager..."
+NOCONFIGURE=1 ./autogen.sh
+./configure --prefix=/usr --libexecdir=/usr/lib/$PKGNAME --sbindir=/usr/bin --sysconfdir=/etc
+
+abinfo "Building ukui-power-manager..."
+make
+
+abinfo "Installing ukui-power-manager..."
+make DESTDIR="$PKGDIR" install dbusdir=/usr/share/dbus-1/system.d systemddir=/usr/lib/systemd/system
