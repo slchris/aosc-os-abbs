@@ -1,0 +1,10 @@
+abinfo "Building ukui-biometric-auth..."
+mkdir -p build
+cd build
+CFLAGS+=" -Wno-implicit-function-declaration" \
+cmake ../ \
+    -GNinja -DCMAKE_INSTALL_PREFIX=/usr
+ninja
+
+abinfo "Installing ukui-biometric-auth..."
+DESTDIR="$PKGDIR" ninja install

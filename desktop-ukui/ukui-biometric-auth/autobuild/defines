@@ -1,0 +1,4 @@
+PKGNAME=ukui-biometric-auth
+PKGDES="Biometric authentication for UKUI"
+PKGSEC=x11
+PKGDEP="opencv polkit-qt-1"

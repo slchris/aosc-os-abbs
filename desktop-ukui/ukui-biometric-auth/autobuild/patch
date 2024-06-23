@@ -1,0 +1,3 @@
+sed -i 's|qt5/QtWidgets/||' polkit-agent/src/PolkitListener.cpp
+sed -i 's|/lib/security|/usr/lib/security|' pam-biometric/CMakeLists.txt
+sed -i 's|gio-unix-2.0|glib-2.0|' bioauth/src/giodbus.cpp
