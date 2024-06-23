@@ -1,4 +1,4 @@
 PKGNAME=ukui-session-manager
 PKGDES="Session manager of the UKUI desktop environment"
 PKGSEC=x11
-PKGDEP="kidletime peony qt-5 qt5-ukui-platformtheme ukui-biometric-auth ukui-panel ukui-settings-daemon ukui-screensaver ukwm x11-lib"
+PKGDEP="kidletime peony qt-5 qt5-ukui-platformtheme ukui-biometric-auth ukui-panel ukui-settings-daemon ukui-screensaver ukwm x11-base x11-lib"
