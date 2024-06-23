@@ -1,0 +1,6 @@
+PKGNAME=indicator-china-weather
+PKGDES="Indicator that displays China weather information"
+PKGSEC=x11
+PKGDEP="geoip-api-c qt-5"
+
+ABSPLITDBG=0

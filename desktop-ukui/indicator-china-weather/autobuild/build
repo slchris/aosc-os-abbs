@@ -1,0 +1,6 @@
+abinfo "Building indicator-china-weather..."
+qmake-qt5 PREFIX=/usr
+make
+
+abinfo "Installing indicator-china-weather..."
+make INSTALL_ROOT="$PKGDIR" install
