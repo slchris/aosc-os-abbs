@@ -1,0 +1,4 @@
+PKGNAME=ukui-screensaver
+PKGDES="Screensaver for UKUI desktop environment"
+PKGSEC=x11
+PKGDEP="dconf gsettings-qt x11-lib opencv qt-5"

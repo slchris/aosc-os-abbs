@@ -1,0 +1,10 @@
+abinfo "Building ukui-screensaver..."
+cp /etc/pam.d/login data/ukui-screensaver-qt
+mkdir -p build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make
+
+
+abinfo "Installing ukui-screensaver..."
+make DESTDIR="$PKGDIR" install
