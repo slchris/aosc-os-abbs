@@ -1,0 +1,6 @@
+abinfo "Building ukui-notebook..."
+qmake-qt5 PREFIX=/usr/
+make
+
+abinfo "Installing ukui-notebook..."
+make INSTALL_ROOT="$PKGDIR" install

@@ -1,0 +1,6 @@
+PKGNAME=ukui-notebook
+PKGDES="Notebook for UKUI desktop environment"
+PKGSEC=x11
+PKGDEP="gsettings-qt kwindowsystem"
+
+ABSPLITDBG=0

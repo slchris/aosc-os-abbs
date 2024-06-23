@@ -1,0 +1,1 @@
+sed -i 's/-lX11 -lXrandr -lXinerama -lXi -lXcursor/-lX11 -lXi/' src/src.pro
