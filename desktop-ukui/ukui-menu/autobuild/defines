@@ -1,0 +1,7 @@
+PKGNAME=ukui-menu
+PKGDES="Start menu development library and advanced graphical user interface for UKUI"
+PKGSEC=x11
+PKGDEP="bamf gsettings-qt kwindowsystem qt-5 uchardet ukui-interface"
+BUILDDEP="qt-5"
+
+ABSPLITDBG=0
