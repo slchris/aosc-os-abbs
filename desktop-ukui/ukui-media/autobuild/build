@@ -1,0 +1,19 @@
+abinfo "Configuring ukui-media..."
+NOCONFIGURE=1 ./autogen.sh
+./configure --prefix=/usr --libexecdir=/usr/lib/$PKGNAME --sysconfdir=/etc
+
+abinfo "Building ukui-media..."
+make
+
+abinfo "Building ukui-volume-control-applet-qt..."
+cd ukui-volume-control-applet-qt
+qmake PREFIX=/usr/share/ukui-media
+make
+
+abinfo "Installing ukui-media..."
+cd $SRCDIR
+make DESTDIR="$PKGDIR" install
+
+abinfo "Installing ukui-volume-control-applet-qt..."
+cd ukui-volume-control-applet-qt
+make INSTALL_ROOT="PKGDIR" install

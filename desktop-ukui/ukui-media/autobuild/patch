@@ -1,0 +1,1 @@
+sed -i 's|systemddir = /lib/systemd/system|systemddir = /usr/lib/systemd/system|' data/Makefile.am

@@ -1,0 +1,6 @@
+PKGNAME=ukui-media
+PKGDES="UKUI media utilities"
+PKGSEC=x11
+PKGDEP="gsettings-qt kwindowsystem libmatemixer libqtxdg mate-desktop qt-5 libcanberra ukui-interface"
+BUILDDEP="autoconf-archive intltool mate-common qt-5"
+ABSPLITDBG=0
