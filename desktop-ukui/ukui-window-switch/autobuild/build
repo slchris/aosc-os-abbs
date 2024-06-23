@@ -1,0 +1,6 @@
+abinfo "Building ukui-window-switch..."
+qmake-qt5 PREFIX=/usr/
+make
+
+abinfo "Installing ukui-window-switch..."
+make INSTALL_ROOT="$PKGDIR" install

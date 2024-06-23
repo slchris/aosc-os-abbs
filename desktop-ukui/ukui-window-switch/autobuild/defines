@@ -1,0 +1,6 @@
+PKGNAME=ukui-window-switch
+PKGDES="Front of the window switcher in UKUI desktop environment"
+PKGSEC=x11
+PKGDEP="gsettings-qt kglobalaccel libwnck-3 qt-5 ukwm"
+
+ABSPLITDBG=0
