@@ -1,0 +1,22 @@
+diff --git a/plugins/authority/procaddserver.cpp b/plugins/authority/procaddserver.cpp
+index 72f5830..af04579 100644
+--- a/plugins/authority/procaddserver.cpp
++++ b/plugins/authority/procaddserver.cpp
+@@ -90,7 +90,7 @@ bool ProcAddServer::setProcEvListen(int nl_sock, bool enable)
+     struct __attribute__ ((aligned(NLMSG_ALIGNTO))) {
+         struct nlmsghdr nl_hdr;
+         struct __attribute__ ((__packed__)) {
+-            struct ky_cn_msg cn_msg;
++            struct cn_msg cn_msg;
+             enum proc_cn_mcast_op cn_mcast;
+         };
+     } nlcn_msg;
+@@ -123,7 +123,7 @@ int ListenThObject::handleProcEv()
+     struct __attribute__ ((aligned(NLMSG_ALIGNTO))) {
+         struct nlmsghdr nl_hdr;
+         struct __attribute__ ((__packed__)) {
+-            struct ky_cn_msg cn_msg;
++            struct cn_msg cn_msg;
+             struct proc_event proc_ev;
+         };
+     } nlcn_msg;

@@ -1,5 +1,5 @@
 diff --git a/plugins/save-param/xrandr-output.cpp b/plugins/save-param/xrandr-output.cpp
-index 3497bf4..7ee0a89 100644
+index 798d5a2..427aaa0 100644
 --- a/plugins/save-param/xrandr-output.cpp
 +++ b/plugins/save-param/xrandr-output.cpp
 @@ -30,6 +30,7 @@
@@ -11,41 +11,46 @@ index 3497bf4..7ee0a89 100644
  #include <KF5/KScreen/kscreen/edid.h>
  #include "xrandr-config.h"
 diff --git a/plugins/xrandr/xrandr-manager.cpp b/plugins/xrandr/xrandr-manager.cpp
-index bbf12b5..b294c19 100644
+index e30ffe3..9f44af3 100644
 --- a/plugins/xrandr/xrandr-manager.cpp
 +++ b/plugins/xrandr/xrandr-manager.cpp
-@@ -950,7 +950,7 @@ void XrandrManager::outputRemoved(int outputId)
- 
+@@ -687,10 +687,10 @@ void XrandrManager::doOutputRemoved(int outputId)
+     m_isInitFinish = false;
  }
  
--void XrandrManager::primaryOutputChanged(const KScreen::OutputPtr &output)
-+void XrandrManager::primaryOutputChanged()
+-void XrandrManager::doPrimaryOutputChanged(const KScreen::OutputPtr &output)
++void XrandrManager::doPrimaryOutputChanged()
  {
- //    USD_LOG(LOG_DEBUG,".");
+-    if (output != nullptr)//if change output is disable, the output are nullptr
+-        USD_LOG_SHOW_OUTPUT(output);
++//    if (output != nullptr)//if change output is disable, the output are nullptr
++//        USD_LOG_SHOW_OUTPUT(output);
+ //    USD_LOG(LOG_DEBUG,"%s--------->%d",output->name().toLatin1().data(), output->isPrimary());
  }
-@@ -1197,7 +1197,7 @@ void XrandrManager::monitorsInit()
-             mSaveConfigTimer->start(SAVE_CONFIG_TIME);
-         });
+ 
+@@ -1015,7 +1015,7 @@ int XrandrManager::initAllOutputs()
+             }
+         },Qt::QueuedConnection);
  
 -        connect(output.data(), &KScreen::Output::isPrimaryChanged, this, [this](){
 +        connect(output.data(), &KScreen::Output::priorityChanged, this, [this](){
              KScreen::Output *senderOutput = static_cast<KScreen::Output*> (sender());
-             USD_LOG(LOG_DEBUG,"PrimaryChanged:%s",senderOutput->name().toLatin1().data());
+             if (senderOutput == nullptr || UsdBaseClass::isWaylandWithKscreen() || !senderOutput->isEnabled()) {
+                 USD_LOG(LOG_DEBUG,"had a bug..");
+@@ -1199,7 +1199,7 @@ int XrandrManager::initAllOutputs()
+     connect(m_configPtr.data(), SIGNAL(outputRemoved(int)),
+             this, SLOT(doOutputRemoved(int)));
  
-@@ -1289,7 +1289,7 @@ void XrandrManager::monitorsInit()
-             this, &XrandrManager::outputRemoved,
-             static_cast<Qt::ConnectionType>(Qt::QueuedConnection | Qt::UniqueConnection));
+-    connect(m_configPtr.data(), &KScreen::Config::primaryOutputChanged,
++    connect(m_configPtr.data(), &KScreen::Config::prioritiesChanged,
+             this, &XrandrManager::doPrimaryOutputChanged);
  
--    connect(mConfig.data(), &KScreen::Config::primaryOutputChanged,
-+    connect(mConfig.data(), &KScreen::Config::prioritiesChanged,
-             this, &XrandrManager::primaryOutputChanged);
- 
-     if (mMonitoredConfig->fileExists()) {
+     if (m_xrandrSettings->keys().contains("hadmate2kscreen")) {//兼容mate配置
 diff --git a/plugins/xrandr/xrandr-manager.h b/plugins/xrandr/xrandr-manager.h
-index 33d0b60..c91c37c 100644
+index d2cf254..36040da 100644
 --- a/plugins/xrandr/xrandr-manager.h
 +++ b/plugins/xrandr/xrandr-manager.h
-@@ -36,6 +36,7 @@
+@@ -34,6 +34,7 @@
  
  
  #include <KF5/KScreen/kscreen/config.h>
@@ -53,17 +58,17 @@ index 33d0b60..c91c37c 100644
  #include <KF5/KScreen/kscreen/log.h>
  #include <KF5/KScreen/kscreen/output.h>
  #include <KF5/KScreen/kscreen/edid.h>
-@@ -130,7 +131,7 @@ public Q_SLOTS:
-     void RotationChangedEvent(const QString &rotation);
-     void outputAddedHandle(const KScreen::OutputPtr &output);
-     void outputRemoved(int outputId);
--    void primaryOutputChanged(const KScreen::OutputPtr &output);
-+    void primaryOutputChanged();
-    // void applyConfigTimerHandle();
-     void setScreenMode(QString modeName);
-     void setScreensParam(QString screensParam);
+@@ -94,7 +95,7 @@ public Q_SLOTS:
+     void doRotationChanged(const QString &rotation);
+     void doOutputAdded(const KScreen::OutputPtr &output);
+     void doOutputRemoved(int outputId);
+-    void doPrimaryOutputChanged(const KScreen::OutputPtr &output);
++    void doPrimaryOutputChanged();
+ 
+     void setOutputsMode(QString modeName);
+     void setOutputsParam(QString screensParam);
 diff --git a/plugins/xrandr/xrandr-output.cpp b/plugins/xrandr/xrandr-output.cpp
-index d18cf4f..4e125b8 100644
+index d95e7e8..86572d4 100644
 --- a/plugins/xrandr/xrandr-output.cpp
 +++ b/plugins/xrandr/xrandr-output.cpp
 @@ -30,6 +30,7 @@
@@ -74,4 +79,3 @@ index d18cf4f..4e125b8 100644
  #include <KF5/KScreen/kscreen/output.h>
  #include <KF5/KScreen/kscreen/edid.h>
  #include "xrandr-config.h"
-

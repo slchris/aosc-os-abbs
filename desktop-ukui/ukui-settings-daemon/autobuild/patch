@@ -1,5 +1,7 @@
-sed -i 's|#include <ukuisdk/kylin-com4cxx.h>|#include <kylin-com4cxx.h>|' common/usd_base_class.h
 sed -i 's|udev.path = /lib/udev/rules.d/|udev.path = /usr/lib/udev/rules.d/|' plugins/mouse/mouse.pro
 sed -e 's|c++11||' -i plugins/xrandr/xrandr.pro -i common/common.pri
 
 patch -p1 -i autobuild/patches/000-libkscreen-5.27.patch
+patch -p1 -i autobuild/patches/001-proc_event_uapi_change.patch
+patch -p1 -i autobuild/patches/002-ddcutil.patch
+patch /usr/include/linux/cn_proc.h < autobuild/patches/003-linux.patch

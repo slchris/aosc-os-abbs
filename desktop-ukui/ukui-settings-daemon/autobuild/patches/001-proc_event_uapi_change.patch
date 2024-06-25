@@ -1,0 +1,35 @@
+diff --git a/plugins/authority/procaddserver.cpp b/plugins/authority/procaddserver.cpp
+index 72f5830..c38a926 100644
+--- a/plugins/authority/procaddserver.cpp
++++ b/plugins/authority/procaddserver.cpp
+@@ -139,24 +139,24 @@ int ListenThObject::handleProcEv()
+             return -1;
+         }
+         switch (nlcn_msg.proc_ev.what) {
+-            case proc_event::PROC_EVENT_FORK:
++            case proc_cn_event::PROC_EVENT_FORK:
+                 if (nlcn_msg.proc_ev.event_data.fork.parent_pid > 1) {
+                     Q_EMIT this->procAdd(nlcn_msg.proc_ev.event_data.fork.parent_pid);
+                 }
+                 break;
+
+-            case proc_event::PROC_EVENT_EXEC:
++            case proc_cn_event::PROC_EVENT_EXEC:
+                 if (nlcn_msg.proc_ev.event_data.exec.process_pid > 1) {
+                     Q_EMIT this->procAdd(nlcn_msg.proc_ev.event_data.exec.process_pid);
+                 }
+                 break;
+
+-            case proc_event::PROC_EVENT_NONE:
+-            case proc_event::PROC_EVENT_UID:
+-            case proc_event::PROC_EVENT_GID:
++            case proc_cn_event::PROC_EVENT_NONE:
++            case proc_cn_event::PROC_EVENT_UID:
++            case proc_cn_event::PROC_EVENT_GID:
+                 break;
+
+-            case proc_event::PROC_EVENT_EXIT:
++            case proc_cn_event::PROC_EVENT_EXIT:
+                 break;
+
+             default:
