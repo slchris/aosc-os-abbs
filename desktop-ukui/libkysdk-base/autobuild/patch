@@ -1,0 +1,1 @@
+sed -i 's|DESTINATION ${CMAKE_INSTALL_LIBDIR}|DESTINATION /usr/lib|g' src/*/CMakeLists.txt
