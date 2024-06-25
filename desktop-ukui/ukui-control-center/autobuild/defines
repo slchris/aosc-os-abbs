@@ -1,6 +1,6 @@
 PKGNAME=ukui-control-center
 PKGDES="Utilities to configure the UKUI desktop"
 PKGSEC=x11
-PKGDEP="bluez-qt ddcutil kconfig kconfigwidgets ki18n libkscreen kwidgetsaddons libpwquality lsb-release peony ukui-interface ukui-panel ukui-media ukui-menus ukui-power-manager ukui-screensaver ukui-settings-daemon upower libcanberra kxmlgui"
+PKGDEP="bluez-qt ddcutil kconfig kconfigwidgets ki18n libkscreen kwidgetsaddons libpwquality lsb-release peony ukui-interface ukui-panel ukui-media ukui-menus ukui-power-manager ukui-screensaver ukui-settings-daemon upower libcanberra kxmlgui libkysdk-base libkysdk-system libkysdk-applications libkylin-chkname kservice"
 
 ABSPLITDBG=0
