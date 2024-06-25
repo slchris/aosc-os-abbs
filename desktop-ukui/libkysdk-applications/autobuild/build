@@ -1,0 +1,7 @@
+abinfo "Building libkysdk-applications..."
+qmake-qt5 PREFIX=/usr/
+make
+
+abinfo "Installing libkysdk-applications..."
+make INSTALL_ROOT="$PKGDIR" install
+install -Dvm644 "$SRCDIR"/development-files/*.pc -t "$PKGDIR"/usr/lib/pkgconfig/

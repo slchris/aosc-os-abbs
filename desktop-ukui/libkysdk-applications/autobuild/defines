@@ -1,0 +1,6 @@
+PKGNAME=libkysdk-applications
+PKGDES="OpenKylin applications sdk"
+PKGSEC=x11
+PKGDEP="dbus glib systemd libkysdk-base libkysdk-system kiconthemes stb freeimage"
+
+ABSPLITDBG=0
