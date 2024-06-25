@@ -1,0 +1,11 @@
+abinfo "Building cjson..."
+cmake -B build \
+    -DENABLE_CJSON_UTILS=On -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib
+
+make -C build
+
+abinfo "Installing cjson..."
+make -C build DESTDIR="$PKGDIR" install
+install -Dm644 LICENSE -t "${PKGDIR}/usr/share/licenses/cJSON/LICENSE"
+
