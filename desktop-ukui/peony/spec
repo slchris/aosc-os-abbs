@@ -1,4 +1,4 @@
-VER=3.2.3
-SRCS="git::commit=tags/v${VER}::https://github.com/ukui/peony.git"
+VER=4.10.0.7
+SRCS="git::commit=tags/upstream/${VER}::https://gitee.com/openkylin/peony.git"
 CHKSUMS="SKIP"
 CHKUPDATE="anitya::id=373022"
