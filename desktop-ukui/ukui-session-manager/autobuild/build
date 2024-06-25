@@ -6,3 +6,6 @@ ninja
 
 abinfo "Installing ukui-session-manager..."
 DESTDIR="$PKGDIR" ninja install
+
+abinfo "Setting execute permission for ukui-session-wayland ..."
+chmod a+x "$PKGDIR"/usr/bin/ukui-session-wayland
