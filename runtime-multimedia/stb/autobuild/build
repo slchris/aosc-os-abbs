@@ -1,0 +1,3 @@
+abinfo "Installing stb..."
+install -Dm 644 *.{c,h} -t "$PKGDIR"/usr/include/stb/
+install -Dm 644 LICENSE -t "$PKGDIR"/usr/share/licenses/stb/

@@ -1,0 +1,3 @@
+VER=0+git20240601
+SRCS="git::commit=013ac3b::https://github.com/nothings/stb.git"
+CHKSUMS="SKIP"
