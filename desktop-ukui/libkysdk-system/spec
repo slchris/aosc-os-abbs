@@ -1,0 +1,3 @@
+VER=2.5.1.2
+SRCS="git::commit=tags/upstream/${VER}::https://gitee.com/openkylin/libkysdk-system.git"
+CHKSUMS="SKIP"

@@ -1,0 +1,11 @@
+abinfo "Building libkysdk-system..."
+mkdir -p build
+cd build
+CFLAGS+=" -Wno-implicit-function-declaration" \
+cmake ../ \
+    -GNinja -DCMAKE_INSTALL_PREFIX=/usr
+ninja
+
+abinfo "Installing libkysdk-system..."
+DESTDIR="$PKGDIR" ninja install
+install -Dvm644 "$SRCDIR"/development-files/*.pc -t "$PKGDIR"/usr/lib/pkgconfig/

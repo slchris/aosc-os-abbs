@@ -1,0 +1,4 @@
+PKGNAME=libkysdk-system
+PKGDES="OpenKylin system sdk"
+PKGSEC=x11
+PKGDEP="dbus glib systemd hwinfo cjson libkysdk-base"
