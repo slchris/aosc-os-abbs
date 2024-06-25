@@ -1,3 +1,3 @@
-sed -i 's|DESTINATION ${CMAKE_INSTALL_LIBDIR}|DESTINATION /usr/lib|g' src/*/CMakeLists.txt
-sed -i 's/kylog/kylog kygsetting/g' src/powermanagement/CMakeLists.txt
-sed -i '/kypowermanager-test/d' src/powermanagement/CMakeLists.txt
+sed -e 's|DESTINATION ${CMAKE_INSTALL_LIBDIR}|DESTINATION /usr/lib|g' -i src/*/CMakeLists.txt -i src/*/*/CMakeLists.txt
+#sed -i 's/kylog/kylog kygsetting/g' src/powermanagement/CMakeLists.txt
+#sed -i '/kypowermanager-test/d' src/powermanagement/CMakeLists.txt

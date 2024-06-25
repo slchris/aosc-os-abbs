@@ -1,3 +1,3 @@
 sed -i 's/-lstb//g' kysdk-kabase/kabase/kabase.pro
-sed -i 's|target.path = /usr/lib/$$QMAKE_HOST.arch-linux-gnu|target.path = /usr/lib/|g' */*.pro
-sed -i 's|target.path = /usr/lib/$$QMAKE_HOST.arch-linux-gnu|target.path = /usr/lib/|g' kysdk-kabase/kabase/kabase.pro
+sed -e 's|target.path = /usr/lib/$$QMAKE_HOST.arch-linux-gnu|target.path = /usr/lib/|g' \
+    -i */*.pro -i kysdk-kabase/kabase/kabase.pro

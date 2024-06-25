@@ -9,5 +9,30 @@ ninja
 
 abinfo "Installing libkysdk-base..."
 DESTDIR="$PKGDIR" ninja install 
-install -Dvm644 "$SRCDIR"/src/*/*.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/config/datatype.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/config/gsettingsparse.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/config/jsonparse.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/config/libkyconf.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/config/structparse.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/config/xmlparse.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/diagnostics/buriedpoint.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/diagnostics/libkydiagnostics.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/gsettings/libkygsetting.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/log/core.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/log/format.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/log/klog_dump.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/log/klog_mqueue.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/log/libkylog.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/log/write.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/log/writeFile.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/process/processdaemon.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/timer/libkytimer.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/utils/data-structure/linklist/skip_linklist/skip_linklist.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/utils/data-structure/linklist/listdata.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/utils/cstring-extension.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/utils/kerr.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/utils/kyutils.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/utils/sdkmarcos.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/conf2/api/ksettingsschema.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
+install -Dvm644 "$SRCDIR"/src/conf2/api/libkysettings.h -t "$PKGDIR"/usr/include/kysdk/kysdk-base/
 install -Dvm644 "$SRCDIR"/development-files/*.pc -t "$PKGDIR"/usr/lib/pkgconfig/
