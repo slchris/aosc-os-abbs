@@ -1,0 +1,3 @@
+VER=1.0.10
+SRCS="git::commit=tags/upstream/${VER}kylin3uk1::https://gitee.com/openkylin/libkylin-chkname.git"
+CHKSUMS="SKIP"

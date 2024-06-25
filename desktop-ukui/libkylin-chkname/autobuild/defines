@@ -1,0 +1,4 @@
+PKGNAME=libkylin-chkname
+PKGDES="kylin username check - shared library"
+PKGSEC=libs
+PKGDEP="glib"
