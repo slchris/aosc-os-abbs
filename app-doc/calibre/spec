@@ -1,5 +1,4 @@
-VER=5.30.0
-REL=3
+VER=7.12.0
 SRCS="tbl::https://download.calibre-ebook.com/$VER/calibre-$VER.tar.xz"
-CHKSUMS="sha256::8ef87f24ba4ca56d842252951690c96402f4ef6096b6187424f40e063bc60d15"
+CHKSUMS="sha256::5c790e453531dfe3be8b6bdb4e26401c8ff4858df13c85efbcd015b97cb8c339"
 CHKUPDATE="anitya::id=6141"
