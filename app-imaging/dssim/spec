@@ -1,4 +1,4 @@
-VER=3.2.0
+VER=3.3.1
 SRCS="tbl::https://github.com/kornelski/dssim/archive/refs/tags/$VER.tar.gz"
-CHKSUMS="sha256::b671aec5b117adb6f9c636ef70ecafbd671caacf8b110098565c01bf5171118f"
+CHKSUMS="sha256::2bb8204f87eea2966e7d1455d174e5b7e3f47514aee13ad73045d4399d0f3edc"
 CHKUPDATE="anitya::id=15340"
