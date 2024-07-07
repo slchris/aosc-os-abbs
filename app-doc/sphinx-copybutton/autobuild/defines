@@ -1,0 +1,9 @@
+PKGNAME=sphinx-copybutton
+PKGSEC=python
+PKGDEP="sphinx"
+BUILDDEP="python-build python-installer setuptools wheel"
+PKGDES="Adds a copy button to code blocks in Sphinx"
+
+ABTYPE=python
+ABHOST=noarch
+NOPYTHON2=1
