@@ -1,0 +1,8 @@
+PKGNAME=markdown-it-py
+PKGSEC=python
+PKGDEP="python-mdurl"
+PKGDES="Python port of markdown-it"
+
+ABHOST=noarch
+NOPYTHON2=1
+ABTYPE=pep517

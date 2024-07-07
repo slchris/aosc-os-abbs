@@ -1,0 +1,4 @@
+VER=2.2.0
+SRCS="https://pypi.io/packages/source/m/markdown-it-py/markdown-it-py-$VER.tar.gz"
+CHKSUMS="sha256::7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1"
+CHKUPDATE="anitya::id=88959"
