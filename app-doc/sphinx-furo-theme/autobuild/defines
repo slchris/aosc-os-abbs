@@ -1,0 +1,9 @@
+PKGNAME=sphinx-furo-theme
+PKGSEC=python
+PKGDEP="sphinx beautifulsoup4 pygments sphinx-basic-ng"
+BUILDDEP="sphinx-theme-builder"
+PKGDES="A customizable documentation theme for Sphinx"
+
+ABHOST=noarch
+NOPYTHON2=1
+ABTYPE=pep517

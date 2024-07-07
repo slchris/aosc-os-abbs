@@ -1,0 +1,4 @@
+VER=2024.5.6
+SRCS="https://pypi.io/packages/source/f/furo/furo-$VER.tar.gz"
+CHKSUMS="sha256::81f205a6605ebccbb883350432b4831c0196dd3d1bc92f61e1f459045b3d2b0b"
+CHKUPDATE="anitya::id=332855"
