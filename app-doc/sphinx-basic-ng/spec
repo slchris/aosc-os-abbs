@@ -1,0 +1,4 @@
+VER=1.0.0b2
+SRCS="https://pypi.io/packages/source/s/sphinx-basic-ng/sphinx_basic_ng-$VER.tar.gz"
+CHKSUMS="sha256::9ec55a47c90c8c002b5960c57492ec3021f5193cb26cebc2dc4ea226848651c9"
+CHKUPDATE="anitya::id=179541"

@@ -1,0 +1,8 @@
+PKGNAME=sphinx-basic-ng
+PKGSEC=python
+PKGDEP="python-3"
+BUILDDEP="setuptools"
+PKGDES="A skeleton for Sphinx themes"
+
+ABHOST=noarch
+NOPYTHON2=1
