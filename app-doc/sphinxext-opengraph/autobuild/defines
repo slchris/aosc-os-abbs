@@ -1,0 +1,8 @@
+PKGNAME=sphinxext-opengraph
+PKGSEC=python
+PKGDEP="sphinx"
+PKGDES="Sphinx extension to generate unique OpenGraph metadata"
+
+ABTYPE=python
+ABHOST=noarch
+NOPYTHON2=1
