@@ -1,0 +1,8 @@
+PKGNAME=sphinx-inline-tabs
+PKGSEC=python
+PKGDEP="sphinx"
+PKGDES="Sphinx extension which adds inline tabbed content"
+
+ABHOST=noarch
+NOPYTHON2=1
+ABTYPE=pep517
