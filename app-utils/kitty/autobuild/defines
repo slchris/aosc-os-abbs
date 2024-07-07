@@ -1,4 +1,5 @@
 PKGNAME=kitty
 PKGSEC=utils
-PKGDEP="fontconfig glew glfw python-3 x11-app lcms2 librsync"
-PKGDES="A modern, hackable, featureful, OpenGL based terminal emulator"
+PKGDEP="fontconfig glew glfw python-3 x11-app lcms2 librsync simde"
+PKGDES="Terminal emulator featuring OpenGL"
+BUILDDEP="go sphinx sphinx-copybutton sphinx-inline-tabs sphinx-furo-theme sphinxext-opengraph"
