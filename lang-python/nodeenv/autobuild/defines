@@ -1,0 +1,9 @@
+PKGNAME=nodeenv
+PKGSEC=python
+BUILDDEP="setuptools python-build packaging python-installer setuptools-scm wheel"
+PKGDEP="python-3"
+PKGDES="Node.js virtual environment builder"
+
+ABHOST=noarch
+NOPYTHON2=1
+ABTYPE=pep517
