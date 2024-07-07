@@ -2,7 +2,7 @@
 export ORIG_PKGDIR="$PKGDIR"
 export PKGDIR="$SRCDIR"/tmp_installroot
 
-if [[ "${CROSS:-$ARCH}" != "amd64" && "${CROSS:-$ARCH}" != "arm64" ]]; then
+if [[ "${CROSS:-$ARCH}" != "amd64" && "${CROSS:-$ARCH}" != "arm64" && "${CROSS:-$ARCH}" != "loongarch64" ]]; then
     abinfo "FIXME: Skipping QtWebEngine on loongson3, ppc64el and riscv64 ..."
     QTWEOPT="-skip qtwebengine"
 else
