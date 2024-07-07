@@ -1,0 +1,4 @@
+VER=0.8.0
+SRCS="tbl::https://pypi.io/packages/source/p/pyproject-metadata/pyproject_metadata-$VER.tar.gz"
+CHKSUMS="sha256::376d5a00764ac29440a54579f88e66b7d9cb7e629d35c35a1c7248bfebc9b455"
+CHKUPDATE="anitya::id=255630"
