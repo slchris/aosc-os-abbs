@@ -1,7 +1,8 @@
 PKGNAME=pygments
 PKGSEC=python
 PKGDEP="setuptools"
+BUILDDEP="hatchling python-build python-installer"
 PKGDES="Python syntax highlighter"
 
-ABTYPE=python
+ABTYPE=pep517
 ABHOST=noarch

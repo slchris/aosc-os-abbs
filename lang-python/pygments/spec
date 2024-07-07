@@ -1,5 +1,5 @@
-VER=2.10.0
+VER=2.17.2
 REL=1
-SRCS="tbl::https://files.pythonhosted.org/packages/source/P/Pygments/Pygments-$VER.tar.gz"
-CHKSUMS="sha256::f398865f7eb6874156579fdf36bc840a03cab64d1cde9e93d68f46a425ec52c6"
+SRCS="tbl::https://files.pythonhosted.org/packages/source/p/pygments/pygments-$VER.tar.gz"
+CHKSUMS="sha256::da46cec9fd2de5be3a8a784f434e4c4ab670b4ff54d605c4c2717e9d49c4c367"
 CHKUPDATE="anitya::id=3986"
