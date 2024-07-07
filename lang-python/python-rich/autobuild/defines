@@ -1,0 +1,9 @@
+PKGNAME=python-rich
+PKGSEC=python
+PKGDEP="python-3 pygments markdown-it-py"
+BUILDDEP="poetry"
+PKGDES="Python library for rich text formatting in the terminal"
+
+ABHOST=noarch
+NOPYTHON2=1
+ABTYPE=pep517
