@@ -1,0 +1,7 @@
+PKGNAME=python-mdurl
+PKGSEC=python
+PKGDES="Python library for handling URLs"
+
+ABHOST=noarch
+NOPYTHON2=1
+ABTYPE=pep517
