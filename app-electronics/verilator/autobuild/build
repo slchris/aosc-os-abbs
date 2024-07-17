@@ -1,0 +1,9 @@
+abinfo "Configuring verilator..."
+autoconf
+./configure --prefix=/usr
+
+abinfo "Building verilator..."
+make
+
+abinfo "Installing verilator..."
+make install DESTDIR="$PKGDIR"
