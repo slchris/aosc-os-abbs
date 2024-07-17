@@ -1,0 +1,11 @@
+--2024-07-18 11:14:52--  https://salsa.debian.org/chromium-team/chromium/-/raw/master/debian/patches/upstream/blink-header2.patch?ref_type=heads
+正在解析主机 localhost (localhost)... ::1, 127.0.0.1
+正在连接 localhost (localhost)|::1|:7890... 已连接。
+已发出 Proxy 请求，正在等待回应... 200 OK
+长度：1742 (1.7K) [text/plain]
+正在保存至: “blink-header2.patch?ref_type=heads”
+
+blink-header2.patch?ref_type=he   0%[                                                     ]       0  --.-KB/s               blink-header2.patch?ref_type=he 100%[====================================================>]   1.70K  --.-KB/s  用时 0s      
+
+2024-07-18 11:14:53 (1.69 GB/s) - 已保存 “blink-header2.patch?ref_type=heads” [1742/1742])
+
