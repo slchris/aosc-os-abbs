@@ -1,7 +1,8 @@
 PKGNAME=bcrypt
 PKGSEC=python
 PKGDEP="cffi six"
-BUILDDEP="setuptools"
+BUILDDEP="llvm setuptools-rust"
 PKGDES="Modern password hashing for your software and your servers"
 
+ABTYPE=pep517
 NOPYTHON2=1
